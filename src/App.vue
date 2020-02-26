@@ -35,10 +35,10 @@ export default {
 
 <style scoped>
   .bg-header {
-    background-color: #9E9E9E;
+    background-color: #191919;
   }
   .main-content {
-    background-color: #191919;
+    background-color: #000;
   }
 
 </style>

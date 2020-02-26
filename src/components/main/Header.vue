@@ -1,15 +1,15 @@
 <template>
-  <div class="flex flex-col w-full sm:w-1/3 lg:w-1/5 bg-header px-10 pt-10 pb-5">
+  <div class="flex flex-col w-full sm:w-1/3 lg:w-1/6 bg-header px-10 pt-10 pb-5">
     <div class="flex-1">
-      <h1 class="sm:text-base md:text-xl lg:text-2xl h-24">{{ name }}</h1>
-      <p class="sm:text-xs md:text-sm">{{ bio }}</p>
+      <h1 class="sm:text-base md:text-xl lg:text-2xl h-24 text-gray-200">{{ name }}</h1>
+      <p class="sm:text-xs md:text-sm text-gray-500">{{ bio }}</p>
     </div>
 
-    <menu-nav
+    <menu-nav class="text-gray-200 font-bold text-xl font-sans"
       :menus="menus"
     ></menu-nav>
 
-    <div class="flex-1 sm:text-xs">
+    <div class="flex-1 sm:text-xs text-gray-500">
       <p>For business enquiries or casual chatter—do drop me a line at {{ email }}. I ♥︎ emails.</p>
       <nav>
         <ul>

@@ -6,6 +6,8 @@
           v-for="(menu, index) in menus"
           :menu="menu"
           :key="index"
+          v-on:click="select(index)"
+          :class="selectedIndex === index ? '':'normal'"
         ></menu-item>
       </ul>
     </nav>
@@ -22,9 +24,24 @@ export default {
     },
     props: {
       menus: Array
+    },
+    data: () => {
+      return {
+        selectedIndex: 0
+      }
+    },
+    methods: {
+      select: function (index) {
+        alert('dkmmmmmmmmmm')
+        console.log(index)
+        this.selectedIndex = index
+      }
     }
 }
 </script>
 
-<style>
+<style scoped>
+.normal {
+  color: #646464;
+}
 </style>

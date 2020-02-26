@@ -1,5 +1,5 @@
 <template>
-  <li class="my-4">{{ menu }}</li>
+  <li class="my-4 hover:text-white hover:underline hover:border-gray-300"><a href="#" class="">{{ menu }}</a></li>
 </template>
 
 <script>
