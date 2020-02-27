@@ -7,19 +7,19 @@
         :email="email"
         :menus="menus"
       ></header-nav>
-      <home msg="Welcome to My Page"/>
+      <Main msg="Welcome to My Page"/>
     </div>
   </div>
 </template>
 
 <script>
-import Home from './components/main/Home.vue'
+import Main from './components/main/Main.vue'
 import HeaderNav from './components/main/Header.vue'
 
 export default {
   name: 'App',
   components: {
-    Home,
+    Main,
     HeaderNav
   },
   data: function() {

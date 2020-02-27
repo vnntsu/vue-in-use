@@ -5,9 +5,9 @@
         <menu-item 
           v-for="(menu, index) in menus"
           :menu="menu"
+          :index="index"
+          :selectedIndex="selectedIndex"
           :key="index"
-          v-on:click="select(index)"
-          :class="selectedIndex === index ? '':'normal'"
         ></menu-item>
       </ul>
     </nav>
@@ -27,12 +27,11 @@ export default {
     },
     data: () => {
       return {
-        selectedIndex: 0
+        selectedIndex: 2
       }
     },
     methods: {
-      select: function (index) {
-        alert('dkmmmmmmmmmm')
+      select(index) {
         console.log(index)
         this.selectedIndex = index
       }

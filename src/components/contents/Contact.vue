@@ -1,12 +1,13 @@
 <template>
-      <div class="w-1/2 sm:w-2/3 lg:w-5/6 main-content">
+      <div class="">
+        <h1>Contact</h1>
       </div>
     
 </template>
 
 <script>
 export default {
-    name: 'Home',
+    name: 'Contact',
     props: {
         msg: String
     }
